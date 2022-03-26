@@ -61,7 +61,14 @@ brownie test -k test_pick_winner --network rinkeby -s
 brownie run scripts/deploy.py --network kovan
 Contract was deployed to [0x1767D6C99fBF98ae063dA81c1911aC9a9ed07C39](https://kovan.etherscan.io/address/0x1767D6C99fBF98ae063dA81c1911aC9a9ed07C39#readContract).
 
+![image](https://user-images.githubusercontent.com/22549197/160218928-e5fbc68c-2da8-4142-8df3-3bfc1d179cf0.png)
+
+
 > if you are obtaining lastRandom as 0x0000000000000000000000000000000000000000, this is typically caused by a delay in RNG provision. The chainlink node on rinkeby takes at least 20 minutes (at time of writing) to return a random value. To avoid this we deployed on Kovan where it takes a couple of minutes to get the random value. 
+
+![image](https://user-images.githubusercontent.com/22549197/160218942-9cedbbb0-39a1-416a-ab77-145449a198b9.png)
+
+The first event reflected the deployment of the contract. The second event - call for randomness.
 
 
 # Other testing altervatives:
