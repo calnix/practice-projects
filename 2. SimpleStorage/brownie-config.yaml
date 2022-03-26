@@ -1,0 +1,7 @@
+#when you run scripts, look for environment variables @ .env file 
+dotenv: .env
+
+#
+wallets:
+  wallet1: ${PRIVATE_KEY}   #pull from env variable
+ #wallet2: ....
